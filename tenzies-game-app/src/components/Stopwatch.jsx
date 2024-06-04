@@ -34,11 +34,13 @@ export default function Stopwatch() {
   };
 
   return (
-    <div className="clock--container">
+    <>
         <h2 className="clock--timer">{formatTime(time)}</h2>
-        <button onClick={startStopwatch}>{isRunning ? 'Stop' : 'Start'}</button>
-        <button onClick={resetStopwatch}>Reset</button>
-    </div>
+        <div className="clock--container">
+            <button onClick={startStopwatch}>{isRunning ? 'Stop' : 'Start'}</button>
+            <button onClick={resetStopwatch}>Reset</button>
+        </div>
+    </>
   );
 };
 

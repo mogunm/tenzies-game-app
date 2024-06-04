@@ -31,6 +31,7 @@ main {
   font-weight: 400;
   margin-top: 0;
   text-align: center;
+  width: 600px;
 }
 
 .dice-container {
@@ -76,14 +77,16 @@ main {
 }
 
 .clock--container {
-  display: grid;
-  grid-template: auto auto / 1fr ; 
-  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
+
 .clock--timer{
   font-family: "Inter", sans-serif;
+  margin: 0;
 }
 
 .clock--container > button {
@@ -91,4 +94,8 @@ main {
   border-radius: 4px;
   background-color: #5035FF;
   color: white;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
 }
